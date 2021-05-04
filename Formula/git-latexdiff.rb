@@ -10,6 +10,7 @@ class GitLatexdiff < Formula
   depends_on "asciidoc" => [:build, :test]
   depends_on "git"
   depends_on "latexdiff"
+  depends_on "latexpand" => :recommended
 
   def install
     system "make", "git-latexdiff.1"
